@@ -1,0 +1,27 @@
+#include<stdio.h> 
+#include<stdlib.h> 
+
+int main(void){ 
+   int qtdp; 
+   int jovem,adulto,idoso; 
+   jovem=adulto=idoso=0; 
+      printf("Bem bindo a pesquisa social:faixa etária\n"); 
+      printf("por favor,diga quantos participantes tem na pesquisa:\n "); 
+      scanf("%d",&qtdp); 
+   int vet[qtdp]; 
+    for(int i=0;i<qtdp;i++){ 
+        printf("Digite a idade da %d° pessoa\t",i+1); 
+        scanf("%d",&vet[i]); 
+      if(vet[i]>=65){ 
+           idoso++; 
+     }else if (vet[i]>=35){ 
+           adulto++; 
+     }else { 
+           jovem++; 
+        } 
+    } 
+    printf("A quantidade de jovens foi de:%d\n",jovem); 
+    printf("A quantidade de adultos foi de:%d\n",adulto); 
+    printf("A quantidade de idosos foi de:%d\n",idoso); 
+return(0); 
+} 
