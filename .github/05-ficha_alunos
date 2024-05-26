@@ -1,0 +1,41 @@
+#include <stdio.h>
+#include<stdlib.h>
+#include<string.h>
+
+struct Aluno {
+    int matricula;
+    char nome[30];
+    float nota_av,simulado1,simulado2;
+};
+int main() {
+    int nAlunos;
+        printf("Bem vindo ao cadastro de alunos!\n");
+        printf("Informe a quantidade de alunos: ");
+            scanf("%d", &nAlunos);
+    
+    struct Aluno alunos[nAlunos];
+    for (int i = 0; i < nAlunos; i++) {
+        printf("\nInforme os dados do aluno %d:\n", i+1);
+            printf("Matrícula(somente números): ");
+                scanf("%d", &alunos[i].matricula);
+            printf("Nome: ");
+                scanf(" %s", &alunos[i].nome);
+            printf("Nota da AV: ");
+                scanf("%f", &alunos[i].nota_av);
+            printf("Nota do Simulado 1: ");
+                scanf("%f", &alunos[i].simulado1);
+            printf("Nota do Simulado 2: ");
+                scanf("%f", &alunos[i].simulado2);
+    }
+    printf("\nDados dos alunos:\n");
+    for (int i = 0; i < nAlunos; i++) {
+        printf("Aluno %d\n", i+1);
+        printf("Matrícula: %d\n", alunos[i].matricula);
+        printf("Nome: %s\n", alunos[i].nome);
+        printf("Nota da AV: %.2f\n", alunos[i].nota_av);
+        printf("Nota do Simulado 1: %.2f\n", alunos[i].simulado1);
+        printf("Nota do Simulado 2: %.2f\n", alunos[i].simulado2);
+        printf("\n");
+    }
+    return 0;
+}
