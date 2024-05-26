@@ -7,7 +7,7 @@ struct Aluno {
     char nome[30];
     float nota_av,simulado1,simulado2;
 };
-int main() {
+int main(void){
     int nAlunos;
         printf("Bem vindo ao cadastro de alunos!\n");
         printf("Informe a quantidade de alunos: ");
@@ -27,7 +27,7 @@ int main() {
             printf("Nota do Simulado 2: ");
                 scanf("%f", &alunos[i].simulado2);
     }
-    printf("\nDados dos alunos:\n");
+        printf("\nDados dos alunos:\n");
     for (int i = 0; i < nAlunos; i++) {
         printf("Aluno %d\n", i+1);
         printf("Matrícula: %d\n", alunos[i].matricula);
