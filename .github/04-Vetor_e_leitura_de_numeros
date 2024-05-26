@@ -1,0 +1,28 @@
+#include<stdio.h> 
+#include<stdlib.h> 
+
+int main(void){ 
+    int n,ref; 
+    int maior,menor,igual; 
+    maior=menor=igual=0; 
+        printf("digite um valor para referência para o cálculo\t"); 
+        scanf("%d",&ref); 
+    int vet[10]; 
+    for(int i=0;i<10;i++){ 
+        printf("Digite o %d° valor\t",i+1); 
+        scanf("%d",&vet[i]); 
+    if(ref<vet[i]){ 
+        maior++; 
+        } 
+    else if(ref>vet[i]){ 
+        menor++; 
+        } 
+    else { 
+        igual++; 
+        } 
+    } 
+    printf("O quantidade de valores maiores que a referência foi de: %d\n",maior); 
+    printf("A quantidade de vezes que a referencia se repetiu foi de: %d\n",igual); 
+     printf("A quantidade de vezes que a referencia foi maior: %d",menor); 
+    return(0); 
+} 
