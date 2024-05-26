@@ -1,0 +1,23 @@
+#include<stdlib.h> 
+#include<stdio.h> 
+    int main(void){ 
+        int n,par,impar; 
+        par=impar=0; 
+        printf("digite a quantidade de valores no seu vetor: \n"); 
+        scanf("%d",&n); 
+        
+    int vet[n]; 
+        for(int i=0;i<n;i++){ 
+            printf("Digite o %d° elemento do vetor\n",i+1); 
+            scanf("%d",&vet[i]); 
+            if (vet[i] %2==0){ 
+                par++; 
+            } 
+            else { 
+                impar++; 
+            } 
+        } 
+        printf("A quantidade de valores pares no vetor foi de:%d\n",par); 
+        printf("A quantidade de valores impares foi de:%d\n",impar);
+        return(0); 
+    } 
