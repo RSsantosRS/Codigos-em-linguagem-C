@@ -1,0 +1,30 @@
+#include<stdlib.h>
+#include<stdio.h>
+#include<string.h>
+
+int main(void){
+    float peso,altura,imc;
+    char nome[30];
+        printf("Bem vindo ao medido de IMC!\n");
+        printf("para começar,diga o seu nome:\n");
+            scanf("%s",nome);
+        printf("Digite a sua altura (em metros):\n");
+            scanf("%f",&altura);
+        printf("Digite o seu peso(kg):\n");
+            scanf("%f",&peso);
+    imc = peso/(altura * altura);
+        if(imc>=40){
+            printf("prezado(a) %s, O seu IMC aponta grau de opesidade nível 3,procure ajuda médica.\n",nome);
+        }else if(imc>=35){
+            printf("prezado(a) %s, O seu IMC aponta grau de obesidade nível 2,procure ajuda médica.\n",nome);
+        }else if(imc>=30){
+             printf("prezado(a) %s, O seu IMC aponta grau de obesidade nível 1,procure ajuda médica.\n",nome);
+        }else if (imc>=25){
+             printf("prezado(a) %s, O seu IMC aponta sobrepeso,procure realizar atividades físicas.\n",nome);
+        }else if(imc>=18.5){
+             printf("prezado(a) %s, O seu IMC aponta um peso normal para o seu tamanho.\n",nome);
+        }else{
+             printf("prezado(a) %s, O seu IMC aponta peso insuficiente,procure um nutricionista.\n",nome);
+        }
+    return(0);
+}
