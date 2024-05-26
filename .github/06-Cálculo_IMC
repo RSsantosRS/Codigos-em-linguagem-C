@@ -14,17 +14,17 @@ int main(void){
             scanf("%f",&peso);
     imc = peso/(altura * altura);
         if(imc>=40){
-            printf("prezado(a) %s, O seu IMC aponta grau de opesidade nível 3,procure ajuda médica.\n",nome);
+            printf("prezado(a) %s, O seu IMC aponta %.2f, grau de opesidade nível 3,procure ajuda médica.\n",nome,imc);
         }else if(imc>=35){
-            printf("prezado(a) %s, O seu IMC aponta grau de obesidade nível 2,procure ajuda médica.\n",nome);
+            printf("prezado(a) %s, O seu IMC aponta %.2f, grau de obesidade nível 2,procure ajuda médica.\n",nome,imc);
         }else if(imc>=30){
-             printf("prezado(a) %s, O seu IMC aponta grau de obesidade nível 1,procure ajuda médica.\n",nome);
-        }else if (imc>=25){
-             printf("prezado(a) %s, O seu IMC aponta sobrepeso,procure realizar atividades físicas.\n",nome);
+             printf("prezado(a) %s, O seu IMC aponta %.2f, grau de obesidade nível 1,procure ajuda médica.\n",nome,imc);
+        }else if(imc>=25){
+             printf("prezado(a) %s, O seu IMC aponta %.2f, sobrepeso,procure realizar atividades físicas.\n",nome,imc);
         }else if(imc>=18.5){
-             printf("prezado(a) %s, O seu IMC aponta um peso normal para o seu tamanho.\n",nome);
+             printf("prezado(a) %s, O seu IMC aponta %.2f, um peso normal para o seu tamanho.\n",nome,imc);
         }else{
-             printf("prezado(a) %s, O seu IMC aponta peso insuficiente,procure um nutricionista.\n",nome);
+             printf("prezado(a) %s, O seu IMC aponta %.2f, peso insuficiente,procure um nutricionista.\n",nome,imc);
         }
     return(0);
 }
