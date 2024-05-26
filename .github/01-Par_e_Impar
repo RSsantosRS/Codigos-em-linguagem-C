@@ -4,12 +4,12 @@
         int n,par,impar; 
         par=impar=0; 
         printf("digite a quantidade de valores no seu vetor: \n"); 
-        scanf("%d",&n); 
+            scanf("%d",&n); 
         
     int vet[n]; 
         for(int i=0;i<n;i++){ 
             printf("Digite o %d° elemento do vetor\n",i+1); 
-            scanf("%d",&vet[i]); 
+                scanf("%d",&vet[i]); 
             if (vet[i] %2==0){ 
                 par++; 
             } 
