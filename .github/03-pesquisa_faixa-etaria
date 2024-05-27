@@ -5,7 +5,7 @@ int main(void){
    int qtdp; 
    int jovem,adulto,idoso; 
    jovem=adulto=idoso=0; 
-      printf("Bem bindo a pesquisa social:faixa etária\n"); 
+      printf("Bem vindo a pesquisa social:faixa etária\n"); 
       printf("por favor,diga quantos participantes tem na pesquisa:\n "); 
       scanf("%d",&qtdp); 
    int vet[qtdp]; 
